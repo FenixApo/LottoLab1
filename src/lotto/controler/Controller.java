@@ -10,7 +10,7 @@ import lotto.model.OutOfRangeException;
 import lotto.model.WinChecker;
 import lotto.view.View;
 
-
+//temp do wywalenia
 /**
  * The controler class, is guiding all actions in the program.
  * 
