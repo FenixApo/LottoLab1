@@ -18,7 +18,8 @@ import lotto.model.OutOfRangeException;
  * @version 1.0
  */
 
-public class View implements Closeable {
+public class View
+{
     
     /** stream connector */
     private Scanner scanner = new Scanner(System.in);
@@ -100,6 +101,8 @@ public class View implements Closeable {
         {
             System.out.println("Liczba " + tableUserInput[i] + " zostala wylosowana " + tableResult[i] + " razy.");
         }
+        
+        scanner.close();
     }
     
     /**
@@ -110,14 +113,5 @@ public class View implements Closeable {
     public void showErrorMessage(String error){  
         
         System.err.println(error); 
-    }
-
-    /**
-     * Closes the input stream.
-     */
-    @Override
-    public void close()
-    {
-        scanner.close();
     }
 }
